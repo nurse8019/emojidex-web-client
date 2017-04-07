@@ -39,7 +39,8 @@ gulp.task('webpack', function () {
     .pipe(webpack({
       output: {
         filename: 'emojidex-client.js',
-        library: 'EmojidexClient'
+        library: 'EmojidexClient',
+        libraryTarget: 'umd'
       },
       module: {
         loaders: [
